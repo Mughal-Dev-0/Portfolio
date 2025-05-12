@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <!-- GSAP Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+    <title>Portfolio || Mughal.dev</title>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-logo">Mughal.dev</div>
+        <div class="nav-links">
+            <a href="#work">Work</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <button class="theme-toggle" aria-label="Toggle theme">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="hero">
+        <h1 class="hero-title">
+            <span class="line">Hi, I'm</span>
+            <span class="line name">Zain Mughal</span>
+            <span class="line role">Web Developer & UI Components Engineer</span>
+        </h1>
+        <p class="hero-description">
+            Crafting elegant web experiences and reusable UI components
+        </p>
+        <div class="cta-buttons">
+            <a href="#work" class="cta-primary">View My Work</a>
+            <a href="#contact" class="cta-secondary">Get In Touch</a>
+        </div>
+    </main>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="about-content">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p class="about-intro">With 6 years of experience in web development, I've mastered the art of
+                            creating stunning digital experiences.</p>
+                        <p class="about-description">Based in Pakistan, I specialize in crafting single-page
+                            applications, portfolios, landing pages, and web-based UI components. My expertise in
+                            JavaScript allows me to build interactive and performant web applications that leave a
+                            lasting impression.</p>
+                        <div class="skills-container">
+                            <h3>Core Skills</h3>
+                            <div class="skills-grid">
+                                <div class="skill-item">
+                                    <span class="skill-name">JavaScript</span>
+                                    <div class="skill-level">
+                                        <div class="skill-progress" data-level="95">
+                                            <div class="values" style="--width-bar:95%;" ></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">UI/UX Design</span>
+                                    <div class="skill-level">
+                                        <div class="skill-progress" data-level="90">
+                                            <div class="values" style="--width-bar:70%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">React</span>
+                                    <div class="skill-level">
+                                        <div class="skill-progress" data-level="92">
+                                            <div class="values" style="--width-bar:30%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">GSAP</span>
+                                    <div class="skill-level">
+                                        <div class="skill-progress" data-level="78" value="89">
+                                            <div class="values" style="--width-bar:80%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">6+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">30+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="work" class="projects">
+        <div class="projects-container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project.png" alt="Project 1">
+                    </div>
+                    <div class="project-content">
+                        <h3>Happy Birthday Wish</h3>
+                        <p>A Realtime link generetor for quick wishing someone.Helpful genereate link and your card
+                            ready to send.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>V-JS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://mughal-dev-0.github.io/Happy_Borthday_Wish/" class="project-link">View
+                                Live</a>
+                            <a href="https://github.com/Mughal-Dev-0/Happy_Borthday_Wish" class="project-link">Source
+                                Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./project2.png" alt="Project 2">
+                    </div>
+                    <div class="project-content">
+                        <h3>Donut 360</h3>
+                        <p>A Donut animation.360 deg animation with symbols using Js algorithm.</p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>V-JS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://mughal-dev-0.github.io/Ascii-Donut-Animation/" class="project-link">View
+                                Live</a>
+                            <a href="https://github.com/Mughal-Dev-0/Ascii-Donut-Animation" class="project-link">Source
+                                Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project3.png" alt="Project 3">
+                    </div>
+                    <div class="project-content">
+                        <h3>HTML Tools</h3>
+                        <p>Html tools for genereating codes for iframes, links , lists , tabels , buttons and more.</p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>V-JS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://mughal-dev-0.github.io/HTML_Tools/" class="project-link">View Live</a>
+                            <a href="https://github.com/Mughal-Dev-0/HTML_Tools" class="project-link">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project4.png" alt="Project 3">
+                    </div>
+                    <div class="project-content">
+                        <h3>Ai Clone</h3>
+                        <p>A Ai clone using Gemini Ai Api key. Working and responsive design Ai tool.</p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>V-JS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://mughal-dev-0.github.io/Mughal.Dev-Ai/" class="project-link">View Live</a>
+                            <a href="https://github.com/Mughal-Dev-0/Mughal.Dev-Ai" class="project-link">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project5.png" alt="Project 3">
+                    </div>
+                    <div class="project-content">
+                        <h3>Glassmorphisam Creator</h3>
+                        <p>A Glassmorphisam Effect genereator for webs.</p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS</span>
+                            <span>V-JS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://mughal-dev-0.github.io/Glassmorphisam-Creator/" class="project-link">View
+                                Live</a>
+                            <a href="https://github.com/Mughal-Dev-0/Glassmorphisam-Creator" class="project-link">Source
+                                Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section class="tools">
+        <div class="tools-container">
+            <h2 class="section-title">Tools & Technologies</h2>
+            <div class="tools-grid">
+                <div class="tool-item">
+                    <i class="fab fa-html5"></i>
+                    <span>HTML5</span>
+                </div>
+                <div class="tool-item">
+                    <i class="fab fa-css3-alt"></i>
+                    <span>CSS3</span>
+                </div>
+                <div class="tool-item">
+                    <i class="fab fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="tool-item">
+                    <i class="fab fa-react"></i>
+                    <span>React</span>
+                </div>
+                <div class="tool-item">
+                    <i class="fab fa-node-js"></i>
+                    <span>Node.js</span>
+                </div>
+                <div class="tool-item">
+                    <i class="fab fa-git-alt"></i>
+                    <span>Git</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>mughal.dev.official@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p>+923121492602</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                        <p>Pakistan</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <h3>Availability</h3>
+                        <p>Available for freelance work</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer with Water Animation -->
+    <footer class="footer">
+        <div class="water-animation">
+            <div class="water-text">2025 copyright reserved by Zain mughal > mughal.dev</div>
+            <!--Waves Container-->
+            <div>
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                    <defs>
+                        <path id="gentle-wave"
+                            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                    </defs>
+                    <g class="parallax">
+                        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                    </g>
+                </svg>
+            </div>
+            <!--Waves end-->
+
+        </div>
+
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
